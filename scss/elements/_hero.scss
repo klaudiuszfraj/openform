@@ -1,8 +1,9 @@
 .hero{
   background-image: url("../../assets/1.jpg");
   background-size: cover;
+  background-position: left bottom;
   .hero__box{
-    padding-top: 50%;
+    padding-top: 30vh;
 
   }
   .hero__content{
