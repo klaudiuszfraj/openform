@@ -1,0 +1,43 @@
+header{
+  background-color: $color-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .hamburger{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    .bar{
+      transition: all 1s ease;
+      width: 90%;
+      height: 5px;
+      background-color: $color-white;
+      border-radius: 2px;
+      position: absolute;
+
+    }
+    .bar:first-child{
+      transform: translateY(10px);
+    }
+    .bar:last-child{
+      transform: translateY(-10px);
+    }
+    &[class*='open']{
+      .bar{
+        display: none;
+      }
+      position: relative;
+      &::after{
+        content: "\f057";
+        font-family: fontawesomeregular;
+        font-size: 2rem;
+      }
+    }
+    @media screen and (min-width: 700px) {
+      display: none;
+    }
+  }
+}
