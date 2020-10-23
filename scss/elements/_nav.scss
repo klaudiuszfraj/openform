@@ -1,0 +1,102 @@
+.navbar{
+  .menu{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    color: $color-white;
+
+    .menu-item{
+      position: relative;
+      a{
+        display: block;
+        color: $color-white;
+        padding: 20px 15px;
+        text-decoration: none;
+        &:hover{
+          color: $color-blue;
+          background-color: $color-darkgray;
+        }
+      }
+      &.has-sub-menu{
+        > a {
+          padding-right: 35px;
+          position: relative;
+          &::after{
+            content: "+";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            color: $color-white;
+          }
+        }
+        .sub-menu{
+          position: absolute;
+          opacity: 0;
+          right: 0;
+          pointer-events: none;
+          background-color: $color-primary;
+          min-width: 100%;
+          width: max-content;
+        }
+        &:hover{
+          > .sub-menu{
+            opacity: 1;
+            pointer-events: all;
+            background-color: $color-darkgray;
+
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: $color-darkgray;
+    z-index: 2;
+    padding-top: $base-spacing*2;
+
+    &.open{
+      display: block;
+    }
+
+    .menu{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .menu-item{
+        width: 100%;
+        border-bottom: 0.5px solid $color-blue;
+      }
+      .has-sub-menu{
+        > .sub-menu{
+          display: none;
+          position: relative;
+        }
+        &:hover{
+          > .sub-menu{
+            display: flex;
+            flex-direction: column;
+            position: static;
+            align-items: center;
+            a{
+              background-color: $color-primary;
+              width: 100%;
+            }
+          }
+          &.menu-item > a::after{
+            content: "-";
+          }
+        }
+      }
+    }
+    .fa-user{
+      display: none;
+    }
+  }
+}
