@@ -1,3 +1,17 @@
+@import "variables";
 *{
   box-sizing: border-box;
+}
+body{
+  font-family: $font-primary;
+  color: $color-text;
+}
+
+$columns: 12;
+$column-base-width: 100% / $columns;
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: $column-base-width * $i;
+  }
 }
