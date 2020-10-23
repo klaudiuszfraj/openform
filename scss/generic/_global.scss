@@ -15,6 +15,9 @@ $column-base-width: 100% / $columns;
     width: $column-base-width * $i;
   }
 }
+img{
+  width: 100%;
+}
 
 .container{
   padding: $base-spacing 2%;
