@@ -1,0 +1,13 @@
+.article-contact{
+
+  @media screen and (min-width: 750px){
+    display: flex;
+    section, article{
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    section{
+      justify-content: flex-start;
+    }
+  }
+}

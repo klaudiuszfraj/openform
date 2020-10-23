@@ -22,6 +22,12 @@
       color: $color-white;
       padding: 10px 60px;
     }
+    @media screen and (min-width: 800px) {
+      flex-direction: row;
+      a{
+        margin-left: $base-spacing*2;
+      }
+    }
   }
 
 }
