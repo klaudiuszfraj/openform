@@ -12,22 +12,36 @@
   <title>OPENFORM</title>
 </head>
 <body>
+
+
 <section class="contact container">
   <p>Contact Us</p>
   <p>Go to the dark side!</p>
   <form action="">
-    <label for="name">
-      <input type="text" id="name" placeholder="Name">
-    </label>
-    <label for="email">
-      <input type="text" id="email" placeholder="Email">
-    </label>
-    <label for="phone">
-      <input type="text" id="phone" placeholder="Your Phone">
-    </label>
-    <label for="message">
-      <textarea name="message" id="message" placeholder="Your massage"></textarea>
-    </label>
+    <div class="input-container correct">
+      <label for="name">
+        <input type="text" id="name" placeholder="Name">
+      </label>
+      <span></span>
+    </div>
+    <div class="input-container incorrect">
+      <label for="email">
+        <input type="text" id="email" placeholder="Email">
+        <span></span>
+      </label>
+    </div>
+    <div class="input-container">
+      <label for="phone">
+        <input type="text" id="phone" placeholder="Your Phone">
+        <span></span>
+      </label>
+    </div>
+    <div class="input-container">
+      <label for="message">
+        <textarea name="message" id="message" placeholder="Your massage"></textarea>
+        <span></span>
+      </label>
+    </div>
     <button>Send</button>
   </form>
 </section>

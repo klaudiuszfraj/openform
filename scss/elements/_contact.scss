@@ -16,12 +16,47 @@
   }
 
   form{
+    width: 100%;
+    .input-container{
+      position: relative;
+      span{
+        display: none;
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        top: 50%;
+        left: 95%;
+        transform: translate(-50%, -50%);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &.correct{
+        input, textarea{
+          border: 2px solid $color-green;
+        }
+        span{
+          display: block;
+          background-image: url("../../assets/Check.svg");
+        }
+      }
+      &.incorrect{
+        input, textarea{
+          border: 2px solid $color-pink;
+          display: block;
+        }
+        span{
+          display: block;
+          background-image: url("../../assets/Close.svg");
 
+        }
+      }
+    }
     input, textarea{
       width: 100%;
       padding: 8px 5px;
       margin: $base-spacing/2 0;
-      border: 2px solid $color-lightgray;
+      border: 2px solid #c2c1c1;
       outline: none;
     }
     textarea{
@@ -31,7 +66,7 @@
     button{
       background-color: $color-orange;
       width: 100%;
-      padding: 10px 0;
+      padding: $base-spacing 0;
       color: $color-white;
       text-transform: uppercase;
       border: none;
