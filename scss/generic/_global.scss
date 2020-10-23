@@ -15,6 +15,11 @@ $column-base-width: 100% / $columns;
     width: $column-base-width * $i;
   }
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 img{
   width: 100%;
 }
