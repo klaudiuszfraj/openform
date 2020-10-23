@@ -1,0 +1,34 @@
+.hero{
+  background-image: url("../../assets/1.jpg");
+  background-size: cover;
+  .hero__box{
+    padding-top: 50%;
+
+  }
+  .hero__content{
+    padding: $base-spacing*2;
+    background-color: rgb(255, 255, 255, 0.5);
+    p{
+      text-transform: uppercase;
+      color: $color-darkgray;
+      font-weight: bold;
+      font-size: 2rem;
+      &.dec{
+        font-size: 3rem;
+        &.FooBoo{
+          color: $color-white;
+          margin-top: -$base-spacing*2;
+        }
+      }
+    }
+  }
+  button{
+    width: 100%;
+    background-color: $color-orange;
+    outline: none;
+    border: none;
+    padding: $base-spacing 0;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+}
