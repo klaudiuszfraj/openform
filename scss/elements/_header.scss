@@ -1,11 +1,12 @@
 header{
   background-color: $color-primary;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: $base-spacing 2% 0 2%;
   height: 71px;
+  >div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
   p{
     color: $color-white;
   }
