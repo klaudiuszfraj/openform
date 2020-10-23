@@ -1,0 +1,27 @@
+.action{
+  padding: $base-spacing;
+  .action__content{
+    background-color: $color-lightgray;
+    padding: $base-spacing;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.4em;
+    }
+    p{
+      margin: $base-spacing*2 0;
+    }
+    a{
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: $color-pink;
+      color: $color-white;
+      padding: 10px 60px;
+    }
+  }
+
+}
