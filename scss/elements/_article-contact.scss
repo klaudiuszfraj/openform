@@ -10,4 +10,12 @@
       justify-content: flex-start;
     }
   }
+  @media screen and (min-width: 1370px){
+    article{
+      img{
+        width: 50%;
+        float: left;
+      }
+    }
+  }
 }
