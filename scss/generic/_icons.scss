@@ -1,0 +1,17 @@
+@font-face {
+  src: url("../../assets/fonts/fontawesome-webfont.ttf");
+  font-family: fontawesomeregular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="icon-"]::before {
+  font-family: fontawesomeregular;
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-anchor::before {
+  content: '\f13d';
+}

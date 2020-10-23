@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "fa-thumbs-o-up",
+    "title": "UTINI",
+    "description": "Wait, there's something dead ahead on the scanner. It looks like our droid...hit the accelerator.",
+    "button": {
+      "text": "ACCELERATE",
+      "link": "#box1"
+    }
+  },
+  {
+    "icon": "fa-plane",
+    "title": "TATOOINE",
+    "description": "Two or Three more things and we're in great shape. The sooner the better.",
+    "button": {
+      "text": "About his mission",
+      "link": "#box2"
+    }
+  },
+  {
+    "icon": "fa-university",
+    "title": "JAM THEIR COMLINK",
+    "description": "Ah, good. New acquisitions. You are a protocol droid, are you not? I am See-Threepio, human-cy... Yes or no will do.",
+    "button": {
+      "text": "About his mission",
+      "link": "#box3"
+    }
+  },
+  {
+    "icon": "fa-trophy",
+    "title": "REMOVE THE BOLT",
+    "description": "All troops will debark for ground assault. Prepare to target the main generator.",
+    "button": {
+      "text": "Mynocks?",
+      "link": "#box4"
+    }
+  }
+]
