@@ -1,0 +1,41 @@
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-lightgray;
+  p{
+    align-self: flex-start;
+    text-transform: uppercase;
+    margin-top: $base-spacing;
+
+    &:last-of-type{
+      font-size: 1.3em;
+      font-weight: bold
+    }
+  }
+
+  form{
+
+    input, textarea{
+      width: 100%;
+      padding: 8px 5px;
+      margin: $base-spacing/2 0;
+      border: 2px solid $color-lightgray;
+      outline: none;
+    }
+    textarea{
+      resize: none;
+      height: 9rem;
+    }
+    button{
+      background-color: $color-orange;
+      width: 100%;
+      padding: 10px 0;
+      color: $color-white;
+      text-transform: uppercase;
+      border: none;
+      outline: none;
+    }
+  }
+}

@@ -15,3 +15,7 @@ $column-base-width: 100% / $columns;
     width: $column-base-width * $i;
   }
 }
+
+.container{
+  padding: $base-spacing 2%;
+}
