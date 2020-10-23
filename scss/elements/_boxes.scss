@@ -1,9 +1,19 @@
 .boxes{
   background-color: $color-lightgray;
+  .boxes__container{
+    justify-content: center;
+    align-items: stretch;
+  }
+  .card{
+    padding: $base-spacing/2;
+    min-width: 240px;
+    display: flex;
+    align-items: stretch;
+  }
   .box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     background-color: $color-white;
@@ -30,9 +40,10 @@
       padding: $base-spacing 0;
       color: $color-white;
       text-transform: uppercase;
+      justify-self: flex-end;
     }
   }
-  .box:nth-child(2){
+  .card:nth-child(2){
     i{
       color: $color-blue;
       border-color: $color-blue;
@@ -41,7 +52,7 @@
       background-color: $color-blue;
     }
   }
-  .box:nth-child(3){
+  .card:nth-child(3){
     i{
       color: $color-purple;
       border-color: $color-purple;
@@ -50,7 +61,7 @@
       background-color: $color-purple;
     }
   }
-  .box:nth-child(4){
+  .card:nth-child(4){
     i{
       color: $color-green;
       border-color: $color-green;

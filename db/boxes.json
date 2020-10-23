@@ -1,7 +1,7 @@
 {
 "boxes":[
   {
-    "icon": "fa-thumbs-o-up",
+    "icon": "fa-thumbs-up",
     "title": "UTINI",
     "description": "Wait, there's something dead ahead on the scanner. It looks like our droid...hit the accelerator.",
     "button": {

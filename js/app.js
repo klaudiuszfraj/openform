@@ -16,14 +16,16 @@ fetch(`${API}/boxes`)
     .then(response => response.json())
     .then(boxes => {
         boxes.map(box=> {
+            const card = document.createElement('div');
             const div = document.createElement('div');
             const i = document.createElement('i');
             const h3 = document.createElement('h3');
             const p = document.createElement('p');
             const a = document.createElement('a');
 
-            div.classList.add('box', 'col-3');
-            i.classList.add(box.icon);
+            card.classList.add('card', 'col-3');
+            div.classList.add('box');
+            i.classList.add('far' ,box.icon);
             h3.innerHTML = box.title;
             p.innerHTML = box.description;
             a.innerText = box.button.text;
@@ -34,7 +36,8 @@ fetch(`${API}/boxes`)
             div.appendChild(p)
             div.appendChild(a)
 
-            boxesContainer.appendChild(div)
+            card.appendChild(div)
+            boxesContainer.appendChild(card)
         })
     })
     .catch(error => {
