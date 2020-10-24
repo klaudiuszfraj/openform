@@ -31,13 +31,13 @@ fetch(`${API}/boxes`)
             a.innerText = box.button.text;
             a.setAttribute('href', box.button.link);
 
-            div.appendChild(i)
-            div.appendChild(h3)
-            div.appendChild(p)
-            div.appendChild(a)
+            div.appendChild(i);
+            div.appendChild(h3);
+            div.appendChild(p);
+            div.appendChild(a);
 
-            card.appendChild(div)
-            boxesContainer.appendChild(card)
+            card.appendChild(div);
+            boxesContainer.appendChild(card);
         })
     })
     .catch(error => {
@@ -61,10 +61,10 @@ form.addEventListener('submit', e => {
     const phoneIsCorrect = validateMobileUS(phone.value);
     const messageIsCorrect = validateText(message.value);
 
-    setInputState(nameIsCorrect,name)
-    setInputState(emailIsCorrect,email)
-    setInputState(phoneIsCorrect,phone)
-    setInputState(messageIsCorrect,message)
+    setInputState(nameIsCorrect,name);
+    setInputState(emailIsCorrect,email);
+    setInputState(phoneIsCorrect,phone);
+    setInputState(messageIsCorrect,message);
 
     if (nameIsCorrect && emailIsCorrect && phoneIsCorrect && messageIsCorrect){
         form.reset();
@@ -80,24 +80,24 @@ form.addEventListener('submit', e => {
 
 function validateText(text){
     if (text === ''){
-        return false
+        return false;
     }
     const re = /^[A-Za-z]*$/;
-    return re.test(String(text))
+    return re.test(String(text));
 }
 function validateEmail(email) {
     if (email === ''){
-        return false
+        return false;
     }
     const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
     return re.test(String(email).toLowerCase());
 }
 function validateMobileUS(number) {
     if (number === '') {
-        return false
+        return false;
     }
     const re = /^[0-9]{9}$/;
-    return re.test(String(number))
+    return re.test(String(number));
 }
 function setInputState(isCorrect, input){
     const parentDiv = input.parentElement.parentElement;
@@ -112,3 +112,16 @@ function setInputState(isCorrect, input){
     }
 }
 //form end
+
+//slider
+
+
+const slider = document.getElementById('slider');
+let slideIndex = 2;
+const intervalId = setInterval(()=>{
+    slider.style.backgroundImage = `url("./assets/${slideIndex}.jpg")`;
+    slideIndex++
+    if (slideIndex === 5){
+        slideIndex = 1;
+    }
+},5000)
