@@ -111,3 +111,4 @@ function setInputState(isCorrect, input){
         parentDiv.classList.add('incorrect');
     }
 }
+//form end
